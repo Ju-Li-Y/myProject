@@ -1,0 +1,38 @@
+环境：
+win10 x64
+IDEA 2021.3.1
+JFormDesigner 7.0.5.1
+JDK17
+
+结构采用基本MVC（model-view-controller）
+从controller层拆分出control和service，从model层分出dao和bean
+
+MVC架构特点：将业务逻辑和展现分开；降低代码耦合性；利于分工；利于组件重用；易于维护；增加系统结构和实现的复杂性
+
+各包作用：
+libraries:依赖库，如swing美化包、数据库连接驱动等
+
+content:存放杂项文件，包括各种图片、格式文件等
+
+model:
+    dao:负责和数据库交互，包括连接、增删改查等
+    bean:里面的类和dao层一一对应，用于数据库操作
+        规范：属性为private，提供getter和setter方法
+
+view:存放界面视图，由于JFromDesigner中各控件为private，因此涉及到控件的操作
+    也需定义在这里面（如获取输入框内容等），并定义public方法以供调用
+
+controller:
+    control:实现各种控件的逻辑操作（如界面跳转、控件监听等），主要负责调度
+    service:实现各种操作的具体功能
+
+调用关系:
+view->control->service->dao->bean(箭头表示前者调用后者)
+
+操作逻辑举例：
+登录功能：
+点击登录按钮
+-->controller层从view层监听到登录按钮触发并调用service层相应的方法loginCheck()
+-->service层调用dao层方法accountQuery()以获取数据库中的账号密码数据
+-->dao层访问数据库，创建model层User对象集并返回
+-->service再具体实现登录操作

@@ -1,0 +1,43 @@
+JFDML JFormDesigner: "7.0.5.1.409" Java: "11.0.14.1" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {seq l {space :::p, par l {comp scrollPane1::l::434:x, seq l {comp label1:::p::p, space :::p, comp label_number:::p::p, space ::95:x, comp btn_clearLog:::p::p, space :::p, comp btn_clearHistory:::p::p}}, space :::p}}"
+			"$verticalGroup": "par l {seq l {space :::p, par b {comp label1:2:b:p:28:p, comp label_number:2:b:p:28:p, comp btn_clearHistory::b:p::p, comp btn_clearLog::b:p::p}, space :::p, comp scrollPane1::::252:x, space :::p}}"
+		} ) {
+			name: "this"
+			"title": "服务器"
+			"defaultCloseOperation": 3
+			"resizable": false
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label1"
+				"text": "当前在线人数："
+				"horizontalAlignment": 11
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label_number"
+				"text": "0"
+			} )
+			add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+				name: "scrollPane1"
+				add( new FormComponent( "javax.swing.JTextArea" ) {
+					name: "textArea"
+					"editable": false
+				} )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "btn_clearHistory"
+				"text": "删除聊天记录"
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "btn_clearLog"
+				"text": "清空日志"
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 0 )
+			"size": new java.awt.Dimension( 450, 350 )
+		} )
+	}
+}

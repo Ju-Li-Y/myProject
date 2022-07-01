@@ -1,0 +1,333 @@
+JFDML JFormDesigner: "7.0.5.1.409" Java: "11.0.14.1" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class java.awt.GridLayout ) ) {
+			name: "this"
+			"title": "客户端"
+			"defaultCloseOperation": 3
+			"resizable": false
+			add( new FormContainer( "javax.swing.JTabbedPane", new FormLayoutManager( class javax.swing.JTabbedPane ) ) {
+				name: "tabbedPane"
+				"tabPlacement": 2
+				add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.GridBagLayout ) {
+					"$columnSpecs": "100, 272, 100, 5, 100, 0:1.0"
+					"$rowSpecs": "289, 125, 0:1.0"
+					"$alignLeft": true
+					"$alignTop": true
+				} ) {
+					name: "panel_all"
+					add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+						name: "scrollPane1"
+						add( new FormComponent( "javax.swing.JTextArea" ) {
+							name: "textArea_allShow"
+							"border": &TitledBorder0 new javax.swing.border.TitledBorder( "消息" )
+							"editable": false
+							"font": new java.awt.Font( "宋体", 0, 16 )
+						} )
+					}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+						"gridwidth": 6
+					} )
+					add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+						name: "scrollPane2"
+						add( new FormComponent( "javax.swing.JTextArea" ) {
+							name: "textArea_allSend"
+							"border": &TitledBorder1 new javax.swing.border.TitledBorder( "输入" )
+							"font": new java.awt.Font( "宋体", 0, 16 )
+						} )
+					}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+						"gridy": 1
+						"gridwidth": 6
+					} )
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "btn_showFileAll"
+						"text": "文件"
+						"toolTipText": "快捷键“ctrl+enter”发送消息"
+					}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+						"gridy": 2
+					} )
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "btn_sendMsgToAll"
+						"text": "发送消息"
+						"toolTipText": "快捷键“ctrl+enter”发送消息"
+					}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+						"gridx": 2
+						"gridy": 2
+					} )
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "btn_sendFileToAll"
+						"text": "发送文件"
+					}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+						"gridx": 4
+						"gridy": 2
+					} )
+				}, new FormLayoutConstraints( null ) {
+					"title": "全部"
+				} )
+				add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.GridBagLayout ) {
+					"$columnSpecs": "100, 272, 100, 5, 100, 0:1.0"
+					"$rowSpecs": "289, 125, 0:1.0"
+					"$alignLeft": true
+					"$alignTop": true
+				} ) {
+					name: "panel_A"
+					add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+						name: "scrollPane3"
+						add( new FormComponent( "javax.swing.JTextArea" ) {
+							name: "textArea_AShow"
+							"border": #TitledBorder0
+							"editable": false
+							"font": &Font0 new java.awt.Font( "宋体", 0, 16 )
+						} )
+					}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+						"gridwidth": 6
+					} )
+					add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+						name: "scrollPane4"
+						add( new FormComponent( "javax.swing.JTextArea" ) {
+							name: "textArea_ASend"
+							"border": #TitledBorder1
+							"font": #Font0
+						} )
+					}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+						"gridy": 1
+						"gridwidth": 6
+					} )
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "btn_showFileA"
+						"text": "文件"
+						"toolTipText": "快捷键“ctrl+enter”发送消息"
+					}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+						"gridy": 2
+					} )
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "btn_sendMsgToA"
+						"text": "发送消息"
+						"toolTipText": "快捷键“ctrl+enter”发送消息"
+					}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+						"gridx": 2
+						"gridy": 2
+					} )
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "btn_sendFileToA"
+						"text": "发送文件"
+					}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+						"gridx": 4
+						"gridy": 2
+					} )
+				}, new FormLayoutConstraints( null ) {
+					"title": "部门A"
+				} )
+				add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.GridBagLayout ) {
+					"$columnSpecs": "100, 272, 100, 5, 100, 0:1.0"
+					"$rowSpecs": "289, 125, 0:1.0"
+					"$alignLeft": true
+					"$alignTop": true
+				} ) {
+					name: "panel_B"
+					add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+						name: "scrollPane5"
+						add( new FormComponent( "javax.swing.JTextArea" ) {
+							name: "textArea_BShow"
+							"border": #TitledBorder0
+							"editable": false
+							"font": &Font1 new java.awt.Font( "宋体", 0, 16 )
+						} )
+					}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+						"gridwidth": 6
+					} )
+					add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+						name: "scrollPane6"
+						add( new FormComponent( "javax.swing.JTextArea" ) {
+							name: "textArea_BSend"
+							"border": #TitledBorder1
+							"font": #Font1
+						} )
+					}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+						"gridy": 1
+						"gridwidth": 6
+					} )
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "btn_showFileB"
+						"text": "文件"
+						"toolTipText": "快捷键“ctrl+enter”发送消息"
+					}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+						"gridy": 2
+					} )
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "btn_sendMsgToB"
+						"text": "发送消息"
+						"toolTipText": "快捷键“ctrl+enter”发送消息"
+					}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+						"gridx": 2
+						"gridy": 2
+					} )
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "btn_sendFileToB"
+						"text": "发送文件"
+					}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+						"gridx": 4
+						"gridy": 2
+					} )
+				}, new FormLayoutConstraints( null ) {
+					"title": "部门B"
+				} )
+				add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.GridBagLayout ) {
+					"$columnSpecs": "100, 272, 100, 5, 100, 0:1.0"
+					"$rowSpecs": "289, 125, 0:1.0"
+					"$alignLeft": true
+					"$alignTop": true
+				} ) {
+					name: "panel_C"
+					add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+						name: "scrollPane7"
+						add( new FormComponent( "javax.swing.JTextArea" ) {
+							name: "textArea_CShow"
+							"border": #TitledBorder0
+							"editable": false
+							"font": &Font2 new java.awt.Font( "宋体", 0, 16 )
+						} )
+					}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+						"gridwidth": 6
+					} )
+					add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+						name: "scrollPane8"
+						add( new FormComponent( "javax.swing.JTextArea" ) {
+							name: "textArea_CSend"
+							"border": #TitledBorder1
+							"font": #Font2
+						} )
+					}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+						"gridy": 1
+						"gridwidth": 6
+					} )
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "btn_showFileC"
+						"text": "文件"
+						"toolTipText": "快捷键“ctrl+enter”发送消息"
+					}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+						"gridy": 2
+					} )
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "btn_sendMsgToC"
+						"text": "发送消息"
+						"toolTipText": "快捷键“ctrl+enter”发送消息"
+					}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+						"gridx": 2
+						"gridy": 2
+					} )
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "btn_sendFileToC"
+						"text": "发送文件"
+					}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+						"gridx": 4
+						"gridy": 2
+					} )
+				}, new FormLayoutConstraints( null ) {
+					"title": "部门C"
+				} )
+				add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.GridBagLayout ) {
+					"$columnSpecs": "187, 60, 120, 5, 100, 5, 100, 0:1.0"
+					"$rowSpecs": "290, 125, 0:1.0"
+					"$alignLeft": true
+					"$alignTop": true
+				} ) {
+					name: "panel_sb"
+					add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+						name: "scrollPane9"
+						add( new FormComponent( "javax.swing.JTextArea" ) {
+							name: "textArea_sbShow"
+							"border": #TitledBorder0
+							"editable": false
+							"font": &Font3 new java.awt.Font( "宋体", 0, 16 )
+						} )
+					}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+						"gridwidth": 8
+					} )
+					add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+						name: "scrollPane10"
+						add( new FormComponent( "javax.swing.JTextArea" ) {
+							name: "textArea_sbSend"
+							"border": #TitledBorder1
+							"font": #Font3
+						} )
+					}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+						"gridy": 1
+						"gridwidth": 8
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "label1"
+						"text": "发送给"
+						"horizontalAlignment": 11
+					}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+						"gridx": 1
+						"gridy": 2
+					} )
+					add( new FormComponent( "javax.swing.JComboBox" ) {
+						name: "cbBox_target"
+						"minimumSize": new java.awt.Dimension( 120, 38 )
+						"preferredSize": new java.awt.Dimension( 120, 38 )
+					}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+						"gridx": 2
+						"gridy": 2
+					} )
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "btn_sendMsgToSb"
+						"text": "发送消息"
+						"toolTipText": "快捷键“ctrl+enter”发送消息"
+					}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+						"gridx": 4
+						"gridy": 2
+					} )
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "btn_sendFileToSb"
+						"text": "发送文件"
+					}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+						"gridx": 6
+						"gridy": 2
+					} )
+				}, new FormLayoutConstraints( null ) {
+					"title": "私聊"
+				} )
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 0 )
+			"size": new java.awt.Dimension( 650, 500 )
+		} )
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {seq l {space :::p, comp scrollPane11::::484:x, space :::p}}"
+			"$verticalGroup": "par l {seq l {space :::p, comp scrollPane11::::296:x, space :::p}}"
+		} ) {
+			name: "frame_allFile"
+			"title": "文件下载"
+			"resizable": false
+			add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+				name: "scrollPane11"
+				add( new FormComponent( "javax.swing.JTable" ) {
+					name: "table_allFile"
+				} )
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 670, 0 )
+			"size": &Dimension0 new java.awt.Dimension( 500, 350 )
+		} )
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {seq l {space :::p, comp scrollPane12::::484:x, space :::p}}"
+			"$verticalGroup": "par l {seq l {space :::p, comp scrollPane12::::296:x, space :::p}}"
+		} ) {
+			name: "frame_depFile"
+			"title": "文件下载"
+			"resizable": false
+			add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+				name: "scrollPane12"
+				add( new FormComponent( "javax.swing.JTable" ) {
+					name: "table_depFile"
+				} )
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"size": #Dimension0
+			"location": new java.awt.Point( 670, 375 )
+		} )
+	}
+}
